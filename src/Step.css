@@ -1,0 +1,116 @@
+.activeStepQuestion{
+    display: block;
+}
+
+.deactiveStepQuestion{
+    display: none;
+}
+
+
+.activeStep{
+    display: block;
+}
+
+.deactiveStep{
+    display: none;
+}
+
+.insurance-steps-sec .sec-padd h2{margin-bottom: 30px;}
+.activeStepQuestion .checkbox-tools:checked + label::before, .activeStepQuestion .checkbox-tools:not(:checked) + label::before,[type="radio"]:checked + label:after, [type="radio"]:not(:checked) + label:after{
+    background: #de3493;
+    border-color: #de34
+}
+.activeStepQuestion .form-group{margin-bottom: 0;}
+.activeStepQuestion .checkbox-tools:not(:checked) + label,.activeStepQuestion .checkbox-tools:checked + label{width: 100%;}
+.btn:focus-visible,.btn:first-child:active{
+    background: #de3493;box-shadow: 0px 5px #991d63;
+    color: #fff;
+}
+
+
+.nme-sec .inpt-fld:hover{
+    border-color: #ddd;box-shadow: none;
+}
+textarea.form-control{
+    min-height: 150px;resize: none;
+}
+
+input[data-test="search-input"]{
+    padding: 10px;
+    border-radius: 10px;
+    outline: 0;
+    box-shadow: none;
+    border-color: #ced4da;
+    height: 50px;
+    font-family: 'Lexend';
+    color: #000;
+    font-size: 16px;
+}
+.klEaee > .wrapper{
+    border-color: #ced4da;
+}
+.cykeor > svg{fill: #000!important;}
+.adrs-step label {
+    display: block;
+    text-align: left;
+    font-weight: 500;
+    margin-bottom: 10px;
+}
+.activeStepQuestion [type="radio"]:checked + label:after, .activeStepQuestion [type="radio"]:not(:checked) + label:after{
+    content: '';height: 0;width: 0;
+}
+
+/* file upload */
+
+.fuload input{visibility: hidden;opacity: 0;height: 0;}
+.fuload label{
+	height: 200px;width: 100%;
+	border: 1px dashed var(--blue1);
+	padding: 40px;margin-top: 30px;border-radius: 10px;
+	background: var(--lblue);
+	display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;color: var(--light);
+    cursor: pointer;
+}
+.usid label{
+	border-color: var(--pink);
+	background: #fff6fc;text-align: center;
+}
+.upic  span{display: block;margin-top: 10px;font-size: 16px;}
+.usid h5{font-size: 16px;margin-bottom: 10px;}
+.usid small{line-height: 12px;font-size: 10px;margin-top: 10px;}
+.sec-padd {
+    background: var(--lblue);
+}
+.adrs-step {
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+    background: #fff;padding: 50px;border-radius: 10px;
+}
+
+.uploadedimg,.uploadoc{height: 120px;overflow: hidden;margin-top: 15px;}
+.uploadedimg img{height: 120px;object-fit: cover;border-radius: 50%;width: 120px;}
+.uploadoc img,.ucard img{height: 100%;object-fit: contain;}
+.profimg input {
+    height: auto;
+    padding: 6px;
+}
+
+/* file upload */
+.condishow p{line-height: 17px;margin-top: 6px;}
+.lglntxt{font-size: 15px;}
+.activeStepQuestion > h6{
+    margin-top: -15px;
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+
+
+@media(max-width:991px){
+    .activeStepQuestion .checkbox-tools:not(:checked) + label, .activeStepQuestion .checkbox-tools:checked + label{
+        margin: 0;
+    }
+    .insurance-steps-sec .sec-padd h2{font-size: 18px;}
+    .adrs-step{padding: 25px;}
+}
